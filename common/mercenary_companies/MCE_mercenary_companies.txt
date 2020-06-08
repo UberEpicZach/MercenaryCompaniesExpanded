@@ -41,3 +41,103 @@ MCE_merc_ikko_ikki = {
 		fire_damage = 0.1
 	}
 }
+
+MCE_merc_royal_life_guard = {
+    regiments_per_development = 0.03
+	infantry_weight = 1
+    home_province = 12
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { province_id = 12 }
+	}
+	modifier = { 
+		infantry_power = 0.1
+		fire_damage_received = -0.05
+	}
+}
+
+MCE_merc_navarrese_company = {
+    regiments_per_development = 0.05
+	infantry_weight = 0.6
+	cavalry_weight = 0.4
+    home_province = 210
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = iberia_region }
+	}
+	modifier = { 
+		land_morale = 0.1
+	}
+}
+
+MCE_merc_sforza_condotierri = {
+    regiments_per_development = 0.05
+	infantry_weight = 0.6
+	cavalry_weight = 0.4
+    home_province = 104
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = iberia_region }
+	}
+	modifier = { 
+		infantry_power = 0.05
+		land_morale = 0.05
+	}
+}
+
+MCE_merc_catalan_guard = {
+    regiments_per_development = 0.05
+	infantry_weight = 0.6
+	cavalry_weight = 0.4
+    home_province = 197
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = iberia_region }
+	}
+	modifier = { 
+		shock_damage_received = -0.05
+		fire_damage_received = -0.05
+	}
+}
+
+MCE_merc_klephts = {
+    regiments_per_development = 0.1
+	infantry_weight = 0.6
+	cavalry_weight = 0.4
+    home_province = 1773
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = iberia_region }
+	}
+	modifier = { 
+		movement_speed = 0.1
+		fire_damage = 0.05
+	}
+}
+
+MCE_merc_varangian_guard = {
+	regiments_per_development = 0.1
+	infantry_weight = 1
+    home_province = 151
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { province_id = 151 }
+		religion = orthodox
+		culture_group = byzantine
+	}
+	modifier = { 
+		infantry_power = 0.1
+		shock_damage = 0.1
+	}
+}
+
+MCE_merc_bulgarian_band = {
+	regiments_per_development = 0.1
+	infantry_weight = 0.5
+	cavalry_weight = 0.5
+    home_province = 1765
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	modifier = { 
+		cavalry_power = 0.15
+	}
+}
