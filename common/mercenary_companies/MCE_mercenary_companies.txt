@@ -1,0 +1,43 @@
+#
+# Example mercenary companies
+#
+
+MCE_merc_red_devils = {
+    regiments_per_development = 0.025
+	cavalry_weight = 1
+    home_province = 1029
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = japan_region }
+	}
+	modifier = { 
+		cavalry_power = 0.1
+	}
+}
+
+MCE_merc_shogunate_guards = {
+    regiments_per_development = 0.1
+	infantry_weight = 1
+    home_province = 1020
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = japan_region }
+	}
+	modifier = { 
+		shock_damage_received = -0.1
+		fire_damage_received = -0.1
+	}
+}
+
+MCE_merc_ikko_ikki = {
+    regiments_per_development = 0.025
+    home_province = 1023
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		capital_scope = { region = japan_region }
+	}
+	modifier = { 
+		land_morale = 0.05
+		fire_damage = 0.1
+	}
+}
