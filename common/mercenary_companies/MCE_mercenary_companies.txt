@@ -42,7 +42,7 @@ MCE_merc_royal_life_guard = {
     regiments_per_development = 0.05
 	infantry_weight = 1
     home_province = 12
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { dan_base_sprite_pack }
     trigger = {	
 		tag = DAN
 		is_year = 1550
@@ -59,7 +59,7 @@ MCE_merc_navarrese_company = {
 	cavalry_weight = 0.3
 	cavalry_weight = 0.2
     home_province = 210
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { westerngfx_sprite_pack }
     trigger = {	
 		capital_scope = { region = iberia_region }
 	}
@@ -73,7 +73,7 @@ MCE_merc_sforza_condotierri = {
 	infantry_weight = 0.8
 	cavalry_weight = 0.2
     home_province = 104
-	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack } }
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
     trigger = {	
 		capital_scope = { region = italy_region }
 	}
@@ -88,7 +88,7 @@ MCE_merc_catalan_guard = {
 	infantry_weight = 0.6
 	cavalry_weight = 0.4
     home_province = 197
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { westerngfx_sprite_pack }
     trigger = {	
 		capital_scope = { region = iberia_region }
 	}
@@ -103,7 +103,7 @@ MCE_merc_klephts = {
 	infantry_weight = 0.8
 	cavalry_weight = 0.2
     home_province = 1773
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { westerngfx_sprite_pack }
     trigger = {	
 		capital_scope = { region = balkan_region }
 	}
@@ -148,7 +148,7 @@ MCE_merc_hashashin = {
 	cavalry_weight = 0.3
 	cost_modifier = 0.7
     home_province = 424
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { per_base_sprite_pack }
 	trigger = {	
 		religion = shiite
 		at_war_with_religious_enemy = yes
@@ -162,7 +162,7 @@ MCE_merc_chu_ko_nu_band = {
 	regiments_per_development = 0.05
 	infantry_weight = 1
 	home_province = 690
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { mng_base_sprite_pack }
 	trigger = {
 		OR = {
 			tag = MNG
@@ -183,7 +183,7 @@ MCE_merc_portuguese_tercos = {
 	artillery_weight = 0.2
 	cost_modifier = 1.5
     home_province = 1014
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { por_base_sprite_pack }
 	trigger = {	
 		capital_scope = { region = japan_region }
 		religion_group = christian
@@ -203,7 +203,7 @@ MCE_merc_baburs_host = {
 	infantry_weight = 0.7
 	cavalry_weight = 0.3
     home_province = 2214
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { per_base_sprite_pack }
 	trigger = {	
 		tag = KHO
 		is_at_war = yes
@@ -219,7 +219,7 @@ MCE_merc_winged_hussars = {
 	cavalry_weight = 1
 	cost_modifier = 1.5
     home_province = 257
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { pol_base_sprite_pack }
 	trigger = {	
 		current_age = age_of_absolutism
 	}
@@ -232,7 +232,7 @@ MCE_merc_winged_hussars = {
 MCE_merc_japanese_guard = {
 	regiments_per_development = 0.03
     home_province = 600
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { jap_base_sprite_pack }
 	trigger = {	
 		japan_region = {
 			has_discovered = ROOT
@@ -250,7 +250,7 @@ MCE_merc_galician_company = {
     home_province = 206
 	infantry_weight = 0.8
 	cavalry_weight = 0.2
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { cas_base_sprite_pack }
 	trigger = {	
 		capital_scope = { region = iberia_region }
 	}
@@ -264,7 +264,7 @@ MCE_merc_arabian_horsemen = {
 	regiments_per_development = 0.05
 	cavalry_weight = 1
     home_province = 392
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
 	trigger = {	
 		capital_scope = { region = arabia_region }
 		religion_group = muslim
@@ -279,7 +279,7 @@ MCE_merc_tatar_mercenaries = {
 	regiments_per_development = 0.05
 	cavalry_weight = 1
     home_province = 303
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	sprites = { asiangfx_sprite_pack }
 	trigger = {	
 		capital_scope = { region = russia_region }
 	}
