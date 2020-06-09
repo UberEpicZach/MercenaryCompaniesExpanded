@@ -169,6 +169,7 @@ MCE_merc_chu_ko_nu_band = {
 		}
 		NOT = {	current_age = age_of_absolutism }
 		NOT = {	current_age = age_of_revolutions }
+	}
 	modifier = { 
 		fire_damage = 0.1
 	}
