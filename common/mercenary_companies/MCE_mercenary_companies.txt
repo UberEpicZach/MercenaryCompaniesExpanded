@@ -310,6 +310,8 @@ MCE_merc_walloon_company = {
 			capital_scope = { region = north_german_region }
 			capital_scope = { region = south_german_region }
 			capital_scope = { region = france_region }
+		}
+	}
 	modifier = { 
 		movement_speed = 0.05
 		loot_amount = 0.1 
@@ -341,6 +343,7 @@ MCE_merc_german_mercenaries = {
 		discipline = 0.05
 	}
 }
+
 MCE_merc_borgia = {
 	regiments_per_development = 0.05
 	infantry_weight = 0.5
@@ -356,6 +359,7 @@ MCE_merc_borgia = {
 		infantry_fire = 0.5 
 	}
 }
+
 MCE_merc_new_company_of_the_rose = { #Shock Troops, historically 1000 knights and 1000 footmen
     regiments_per_development = 0.03
     home_province = 4730
@@ -401,7 +405,7 @@ MCE_honoratas_band = { #Don't kill me, this is a female band so they get female 
 	home_province = 1862
 	sprites = { sav_base_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { superregion = europe_superregion }
+		capital_scope = { continent = europe }
 		NOT = { current_age = age_of_discovery }
 	}
 	modifier = { 
@@ -410,6 +414,7 @@ MCE_honoratas_band = { #Don't kill me, this is a female band so they get female 
 		may_recruit_female_generals = yes
 		female_advisor_chance = 1.0
 	}
+}
 
 MCE_merc_knights_cyprus = {
 	regiments_per_development = 0.05
@@ -419,8 +424,8 @@ MCE_merc_knights_cyprus = {
     home_province = 321
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { superregion = europe_superregion }
-		religion_group = christian
+		capital_scope = { continent = europe }
+		religion = catholic
 		at_war_with_religious_enemy = yes 
 	}
 	modifier = { 
@@ -436,8 +441,8 @@ MCE_merc_knights_hospitaller = {
     home_province = 320
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { superregion = europe_superregion }
-		religion_group = christian
+		capital_scope = { continent = europe }
+		religion = catholic
 		at_war_with_religious_enemy = yes 
 	}
 	modifier = { 
@@ -445,6 +450,7 @@ MCE_merc_knights_hospitaller = {
 		siege_ability = 0.10
 	}
 }
+
 MCE_merc_teutonic_order = {
 	regiments_per_development = 0.05
 	infantry_weight = 0.3
@@ -452,26 +458,23 @@ MCE_merc_teutonic_order = {
 	home_province = 41
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		capital_scope = { continent = europe }
 		OR = {
 			AND = {
-				capital_scope = { superregion = europe_superregion }
-				religion_group = christian
+				religion = catholic
 				at_war_with_religious_enemy = yes
-				}
-			
-			any_country = {
-				war_with = POL
-				war_with = LIT
-				war_with = PLC
-				}
 			}
-		}	
-		modifier = { 
-			land_morale = 0.05
-			cavalry_shock = 1 
+			war_with = POL
+			war_with = LIT
+			war_with = PLC
 		}
 	}
+	modifier = { 
+		land_morale = 0.05
+		cavalry_shock = 1 
+	}
 }
+
 MCE_merc_livonia_order = {
 	regiments_per_development = 0.05
 	infantry_weight = 0.4
@@ -479,8 +482,9 @@ MCE_merc_livonia_order = {
     home_province = 37
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { superregion = europe_superregion }
-		religion_group = christian
+		capital_scope = { continent = europe }
+		
+		religion = catholic
 		at_war_with_religious_enemy = yes 
 	}
 	modifier = { 
@@ -488,6 +492,7 @@ MCE_merc_livonia_order = {
 		infantry_fire = 1
 	}
 }
+
 MCE_merc_knights_of_calatrava = {
 	regiments_per_development = 0.05
 	infantry_weight = 0.3
@@ -496,7 +501,7 @@ MCE_merc_knights_of_calatrava = {
 	sprites = { dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
 	trigger = {
 		capital_scope = { region = iberia_region }
-		religion_group = christian
+		religion = catholic
 		at_war_with_religious_enemy = yes 
 	}
 	modifier = { 
@@ -504,6 +509,7 @@ MCE_merc_knights_of_calatrava = {
 		cavalry_fire = 1
 	}
 }
+
 MCE_merc_knights_of_santiago = {
 	regiments_per_development = 0.08
 	infantry_weight = 0.8
@@ -512,7 +518,7 @@ MCE_merc_knights_of_santiago = {
 	sprites = { dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
 	trigger = {
 		capital_scope = { region = iberia_region }
-		religion_group = christian
+		religion = catholic
 		at_war_with_religious_enemy = yes 
 	}
 	modifier = { 
@@ -520,6 +526,7 @@ MCE_merc_knights_of_santiago = {
 		infantry_shock = 1
 	}
 }
+
 MCE_merc_brotherhood_of_the_holy_sepulchre = {
 	regiments_per_development = 0.04
 	infantry_weight = 1
@@ -534,6 +541,7 @@ MCE_merc_brotherhood_of_the_holy_sepulchre = {
 			}
 	}
 }
+
 MCE_merc_Montefeltro_Bastion = {
 	regiments_per_development = 0.08
 	infantry_weight = 0.9
@@ -575,6 +583,7 @@ MCE_merc_Montefeltro_Bastion = {
 		recover_army_morale_speed = 0.10
 	}
 }
+
 MCE_merc_black_company = {
 	regiments_per_development = 0.09
 	infantry_weight = 0.9
