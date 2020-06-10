@@ -625,3 +625,34 @@ MCE_merc_black_company = {
 		
 	}
 }
+
+MCE_merc_local_lukerzz = {
+	regiments_per_development = 0.09
+	infantry_weight = 0.8
+	cavalry_weight = 0.2
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+	trigger = {
+		capital_scope = { province_id = 101 }
+		primary_culture = norwegian
+	}
+	modifier = {
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+}
+
+MCE_merc_hakkapeliitta = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1
+	home_province = 27
+	cost_modifier = 1.7
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+	trigger = {
+		capital_scope = { region = scandinavia_region }
+		current_age = age_of_absolutism
+	}
+	modifier = {
+		cavalry_power = 0.15
+		cavalry_shock = 0.5
+	}
+}
