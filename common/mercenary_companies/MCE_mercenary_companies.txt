@@ -346,8 +346,7 @@ MCE_merc_german_mercenaries = {
 
 MCE_merc_borgia = {
 	regiments_per_development = 0.05
-	infantry_weight = 0.5
-	artillery_weight = 0.5
+	artillery_weight = 0.3
     home_province = 2977
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
@@ -355,8 +354,8 @@ MCE_merc_borgia = {
 		NOT = { current_age = age_of_discovery }
 	}
 	modifier = { 
-		fire_damage_received = -0.1
-		infantry_fire = 0.5 
+		infantry_fire = 1
+		siege_ability = 0.10 
 	}
 }
 
