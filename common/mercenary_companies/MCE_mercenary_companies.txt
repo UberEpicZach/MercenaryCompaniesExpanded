@@ -409,7 +409,7 @@ MCE_honoratas_band = { #Don't kill me, this is a female band so they get female 
 	}
 	modifier = { 
 		discipline = 0.02
-		land_morale = 0.5
+		land_morale = 0.05
 		may_recruit_female_generals = yes
 		female_advisor_chance = 1.0
 	}
@@ -653,5 +653,94 @@ MCE_merc_hakkapeliitta = {
 	modifier = {
 		cavalry_power = 0.15
 		cavalry_shock = 0.5
+	}
+}
+
+MCE_merc_ninjas = {
+	regiments_per_development = 0.02
+	home_province = 4359
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		capital_scope = { region = japan_region }
+	}
+	modifier = {
+		siege_ability = 0.1
+		movement_speed = 0.1
+	}
+}
+
+MCE_merc_nagaur_veterans = {
+	regiments_per_development = 0.06
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		tag = NGA
+		culture_group = germanic
+	}
+	modifier = {
+		fire_damage = 0.1
+		infantry_fire = 0.5
+	}
+}
+
+MCE_prussian_blue_marines = {
+	regiments_per_development = 0.001
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		tag = PRU
+		has_global_modifier_value = {
+			which = discipline
+			value = 0.6
+		}
+	}
+	modifier = {
+		discipline = 0.05
+		infantry_power = 0.1
+	}
+}
+
+MCE_uruk_hai = {
+	regiments_per_development = 0.1
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		tag = SRU
+		government_rank = 3
+	}
+	modifier = {
+		movement_speed = 0.1
+	}
+}
+
+MCE_pretorian_guards = {
+	regiments_per_development = 0.03
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		tag = ROM
+	}
+	modifier = {
+		infantry_power = 0.1
+	}
+}
+
+MCE_threehundered_spartans = {
+	regiments_per_development = 0.000000000000001
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	trigger = {
+		capital_scope = { province_id = 145 }
+	}
+	modifier = {
+		infantry_power = 0.2
+	}
+}
+
+MCE_sacred_band = {
+	regiments_per_development = 0.03
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+	home_province = 146
+	trigger = {
+		culture = greek
+	}
+	modifier = {
+		infantry_power = 0.05
+		discipline = 0.025
 	}
 }
