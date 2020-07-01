@@ -1,3 +1,49 @@
+MCE_merc_siddis = {
+    regiments_per_development = 0.05
+	infantry_weight = 1
+    home_province = 2089
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		any_owned_province = {
+                    has_goods_produced = slaves
+		}
+		religion_group = muslim
+	}
+	modifier = { 
+		trade_efficiency = 0.05
+	}
+}
+
+MCE_merc_ambonese_warriors = {
+    regiments_per_development = 0.05
+	infantry_weight = 1
+    home_province = 2684
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		any_owned_province = {
+                    region = moluccas_region
+		}
+	}
+	modifier = { 
+		shock_damage_received = -0.05
+	}
+}
+
+MCE_merc_nias_warriors = {
+    regiments_per_development = 0.05
+	infantry_weight = 1
+    home_province = 2684
+	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
+    trigger = {	
+		any_owned_province = {
+                    region = malaya_region
+		}
+	}
+	modifier = { 
+		hostile_attrition = 0.5
+	}
+}
+
 MCE_merc_red_devils = {
     regiments_per_development = 0.025
 	cavalry_weight = 1
