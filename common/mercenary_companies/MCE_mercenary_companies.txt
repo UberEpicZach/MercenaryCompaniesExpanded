@@ -349,7 +349,7 @@ MCE_merc_walloon_company = {
 	infantry_weight = 0.7
 	cavalry_weight = 0.3
     home_province = 1866
-	sprites = { dlc042_ned_sprite_pack westerngfx_sprite_pack }
+	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack westerngfx_sprite_pack }
 	trigger = {
 		OR = {
 			capital_scope = { region = low_countries_region }
