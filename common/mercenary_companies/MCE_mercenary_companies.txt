@@ -790,3 +790,35 @@ MCE_sacred_band = {
 		discipline = 0.025
 	}
 }
+
+MCE_schlachtschwertierer = {
+    regiments_per_development = 0.025
+    home_province = 4775
+	sprites = { Schlachtschwertierer_mod_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		capital_scope = { region = north_german_region }
+		NOT = { current_age = age_of_discovery }
+	}
+	modifier = { }
+}
+
+MCE_Brunswick_Ceremonial_Guard = {
+    regiments_per_development = 0.025
+    home_province = 57
+	sprites = { Brunswick_Guard_mod_sprite_pack dlc061_han_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		OR = {
+			tag = HAN
+			tag = BRU
+			tag = CLB
+			tag = LUN
+			dynasty = "von Welf"
+			dynasty = "von Hannover"
+		}
+		NOT = { current_age = age_of_discovery }
+	}
+	modifier = {
+        land_morale = 0.1
+        discipline = 0.025
+	}
+}
