@@ -883,10 +883,53 @@ MCE_Victual_Brothers = {
 	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
 	cost_modifier = 0.7
 	trigger = {
-		capital_scope = ( continent = europe
+		capital_scope = ( continent = europe }
 	}
 	modifier = {
 		movement_speed_onto_off_boat_modifier = 2
 		loot_amount = 0.3
+	}
+}
+
+MCE_Fusiliers = {
+	regiments_per_development = 0.025
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	cost_modifier = 1
+	trigger = {
+		mil_tech = 21
+	}
+	modifier = {
+		movement_speed = 0.1
+		fire_damage = 0.05
+	}
+}
+
+MCE_Karambit_Warriors = {
+	regiments_per_development = 0.2
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	cost_modifier = 0.5
+	home_province = 2677
+	trigger = {
+		capital_scope = { region = malaya_region }
+	}
+	modifier = {
+		fire_damage_received = 0.1
+		shock_damage_received = 0.1
+	}
+}
+
+MCE_Royal_Guard = {
+	regiments_per_development = 0.01
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	cost_modifier = 1.3
+	home_province = 2677
+	trigger = {
+		government = monarchy
+		capital_scope = { region = europe }
+		mil_tech = 16
+	}
+	modifier = {
+		infantry_power = 0.1
+		leader_land_fire = 1
 	}
 }
