@@ -567,7 +567,7 @@ MCE_merc_knights_of_santiago = {
 		at_war_with_religious_enemy = yes 
 	}
 	modifier = { 
-		fire_damage_received = -1
+		fire_damage_received = -0.1
 		infantry_shock = 1
 	}
 }
@@ -820,5 +820,73 @@ MCE_Brunswick_Ceremonial_Guard = {
 	modifier = {
         land_morale = 0.1
         discipline = 0.025
+	}
+}
+
+MCE_Jurchen_Band = {
+    regiments_per_development = 0.015
+    home_province = 2108
+	cavalry_weight = 1
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		NOT = { government = horde } 
+		capital_scope = { continent = asia }
+	}
+	modifier = {
+        cavalry_flanking = 0.5
+		movement_speed = 0.1
+	}
+}
+
+MCE_Tirhuti_Band = {
+	regiments_per_development = 0.2
+    home_province = 2047
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+    trigger = {
+		capital_scope = { superregion = india_superregion }
+	}
+	modifier = {
+        infantry_power = 0.1
+	}
+}
+
+MCE_Minutemen = {
+	regiments_per_development = 0.2
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	cost_modifier = 0.7
+	trigger = {
+		tag = USA
+		is_at_war = yes
+	}
+	modifier = {
+		reinforce_speed = 0.3
+		land_attrition = 0.1
+		recover_army_morale_speed = 0.05
+	}
+}
+
+MCE_Tlaxcala_Mercenaries = {
+	regiments_per_development = 0.2
+	home_province = 850
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	cost_modifier = 0.6
+	trigger = {
+		is_primitive = no
+	}
+	modifier = {
+	}
+}
+
+MCE_Victual_Brothers = {
+	regiments_per_development = 0.1
+	home_province = 25
+	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	cost_modifier = 0.7
+	trigger = {
+		capital_scope = ( continent = europe
+	}
+	modifier = {
+		movement_speed_onto_off_boat_modifier = 2
+		loot_amount = 0.3
 	}
 }
