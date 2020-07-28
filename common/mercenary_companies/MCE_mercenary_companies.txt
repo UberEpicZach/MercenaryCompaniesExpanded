@@ -780,7 +780,11 @@ MCE_schlachtschwertierer = {
     home_province = 4775
 	sprites = { Schlachtschwertierer_mod_sprite_pack westerngfx_sprite_pack }
     trigger = {
-		capital_scope = { region = north_german_region }
+		OR = {
+			capital_scope = { region = north_german_region }
+			tag = GER
+			tag = HLR
+		}
 		NOT = { current_age = age_of_discovery }
 	}
 	modifier = { }
