@@ -829,7 +829,7 @@ MCE_Jurchen_Band = {
 MCE_Tirhuti_Band = {
 	regiments_per_development = 0.2
     home_province = 2047
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	sprites = { dlc091_npl_sprite_pack dlh_base_sprite_pack }
     trigger = {
 		capital_scope = { superregion = india_superregion }
 	}
@@ -840,7 +840,7 @@ MCE_Tirhuti_Band = {
 
 MCE_Minutemen = {
 	regiments_per_development = 0.2
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	sprites = { dlc005_usa_sprite_pack westerngfx_sprite_pack }
 	cost_modifier = 0.7
 	trigger = {
 		tag = USA
@@ -856,7 +856,7 @@ MCE_Minutemen = {
 MCE_Tlaxcala_Mercenaries = {
 	regiments_per_development = 0.2
 	home_province = 850
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	sprites = { dlc011_spa_custom_sprite_pack westerngfx_sprite_pack }
 	cost_modifier = 0.6
 	trigger = {
 		is_primitive = no
@@ -868,7 +868,7 @@ MCE_Tlaxcala_Mercenaries = {
 MCE_Victual_Brothers = {
 	regiments_per_development = 0.1
 	home_province = 25
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	sprites = { dlc054_swe_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
 	cost_modifier = 0.7
 	trigger = {
 		capital_scope = ( continent = europe }
@@ -881,7 +881,7 @@ MCE_Victual_Brothers = {
 
 MCE_Fusiliers = {
 	regiments_per_development = 0.025
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	sprites = { dlc054_swe_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
 	cost_modifier = 1
 	trigger = {
 		mil_tech = 21
@@ -894,7 +894,7 @@ MCE_Fusiliers = {
 
 MCE_Karambit_Warriors = {
 	regiments_per_development = 0.2
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
+	sprites = { asiangfx_sprite_pack }
 	cost_modifier = 0.5
 	home_province = 2677
 	trigger = {
@@ -908,7 +908,6 @@ MCE_Karambit_Warriors = {
 
 MCE_Royal_Guard = {
 	regiments_per_development = 0.01
-	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
 	cost_modifier = 0.9
 	trigger = {
 		government = monarchy
@@ -916,5 +915,21 @@ MCE_Royal_Guard = {
 	}
 	modifier = {
 		infantry_power = 0.1
+	}
+}
+
+MCE_Grenzer = {
+    regiments_per_development = 0.02
+    home_province = 131
+	sprites = { Grenzer_mod_sprite_pack easterngfx_sprite_pack }
+    trigger = {
+		OR = {
+			accepted_culture = croatian
+			primary_culture = croatian
+		}
+		NOT = { current_age = age_of_discovery }
+	}
+	modifier = {
+		movement_speed = 0.2
 	}
 }
