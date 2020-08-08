@@ -20,8 +20,7 @@ on_mercenary_recruited = {
 		FROM = {
 			add_papal_influence = -15
 		}
-	
-	
+	}
 	if = {
 		limit = {
 			template = MCE_merc_brotherhood_of_the_holy_sepulchre
@@ -30,4 +29,5 @@ on_mercenary_recruited = {
 			}
 		}
 		add_patriarch_authority = -0.05
+	}
 }
