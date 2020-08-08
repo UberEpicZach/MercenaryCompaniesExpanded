@@ -1,4 +1,8 @@
 ﻿l_german:
+ # Companies:
+ MCE_merc_siddis: "Habshi-Söldner"
+ MCE_merc_ambonese_warriors: "Ambonesische Krieger"
+ MCE_merc_nias_warriors: "Nias-Krieger"
  MCE_merc_red_devils: "Rote Teufel"
  MCE_merc_shogunate_guards: "Wachen des Shogun"
  MCE_merc_ikko_ikki: "Ikko Ikki"
@@ -43,3 +47,25 @@
  MCE_pretorian_guards: "Prätorianergarde"
  MCE_threehundered_spartans: "300 Spartaner"
  MCE_sacred_band: "Die Heilige Schar"
+ MCE_schlachtschwertierer: "Schlachtschwertierer"
+ MCE_Brunswick_Ceremonial_Guard: "Braunschweiger Zeremonielle Garde"
+ MCE_Jurchen_Band: "Jurchen-Söldner"
+ MCE_Tirhuti_Band: "Tirhuti-Söldner"
+ MCE_Minutemen: "Minutemen"
+ MCE_Tlaxcala_Mercenaries: "Tlaxcala-Söldner"
+ MCE_Victual_Brothers: "Vitalienbrüder"
+ MCE_Fusiliers: "Füsilier"
+ MCE_Karambit_Warriors: "Karambitkämpfer"
+ MCE_Royal_Guard: "Königliche Garde"
+ MCE_Grenzer: "Grenzer"
+ MCE_Cuirassiers: "Kürassiere"
+ MCE_Hussite_Company: "Hussitische Kompanie"
+
+ # Events:
+ MCE_Holy_Orders.1.t: "Heiliger Orden aufgelöst"
+ MCE_Holy_Orders.1.d: "Unser Land befindet sich mit keinem religiösen Feind mehr im Krieg. Jeder Heilige Orden in unserem Land hat dies als Grund dafür betrachtet, uns nicht länger zu dienen und stattdessen in ihre Heimat zurückzukehren."
+ MCE_Holy_Orders.1.a: "So sei ess."
+
+ MCE_Holy_Orders.2.t: "Deutscher Orden aufgelöst"
+ MCE_Holy_Orders.2.d: "Unsere Kriege mit den Feinden des Deutschen Ordens sind beendet. Die Ritter des Ordens haben diese Möglichkeit genutzt, um sich von unserer Armee zu trennen und in ihre Heimat zurückzukehren."
+ MCE_Holy_Orders.2.a: "So sei ess."

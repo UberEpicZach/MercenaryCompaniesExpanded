@@ -1,4 +1,5 @@
 ﻿l_english:
+ # Companies:
  MCE_merc_siddis: "Habshi Band"
  MCE_merc_ambonese_warriors: "Ambonese Warriors"
  MCE_merc_nias_warriors: "Nias Warriors"
@@ -59,13 +60,12 @@
  MCE_Grenzer: "Grenzer"
  MCE_Cuirassiers: "Cuirassiers"
  MCE_Hussite_Company: "Hussite Company"
- 
- #Events:
- 
+
+ # Events:
  MCE_Holy_Orders.1.t: "Holy Order Disbanded"
  MCE_Holy_Orders.1.d: "Our country is no longer at war with a religious enemy. Every holy order within our country has seen this as a reason to stop serving us, thus, they return to their homeland."
  MCE_Holy_Orders.1.a: "So be it."
- 
+
  MCE_Holy_Orders.2.t: "The Teutonic Order Disbands"
  MCE_Holy_Orders.2.d: "Our wars with the enemies of the Teutonic Order have ended. The knights of the order have taken this opportunity to disband from our army, and return to their homeland."
  MCE_Holy_Orders.2.a: "So be it."
