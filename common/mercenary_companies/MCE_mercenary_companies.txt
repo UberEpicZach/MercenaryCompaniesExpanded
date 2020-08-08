@@ -911,7 +911,7 @@ MCE_Royal_Guard = {
 	cost_modifier = 0.9
 	trigger = {
 		government = monarchy
-		capital_scope = { region = europe }
+		capital_scope = ( continent = europe }
 	}
 	modifier = {
 		infantry_power = 0.1
@@ -923,7 +923,7 @@ MCE_Cuirassiers = {
 	cost_modifier = 0.8
 	cavalry_weight = 1
 	trigger = {
-		capital_scope = { region = europe }
+		capital_scope = ( continent = europe }
 	}
 	modifier = {
 		shock_damage_received = 0.05
@@ -944,5 +944,21 @@ MCE_Grenzer = {
 	}
 	modifier = {
 		movement_speed = 0.2
+	}
+}
+
+MCE_Hussite_Company = {
+	regiments_per_development = 0.02
+    home_province = 266
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		capital_scope = ( continent = europe }
+		266 = {
+			religion = hussite
+		}
+	}
+	modifier = {
+		movement_speed = -0.1
+		shock_damage_received = -0.1
 	}
 }
