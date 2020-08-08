@@ -5,7 +5,7 @@ MCE_merc_siddis = {
     trigger = {
 		religion_group = muslim
 	}
-	modifier = { 
+	modifier = {
 		infantry_power = 0.1
 	}
 }
@@ -14,12 +14,12 @@ MCE_merc_ambonese_warriors = {
     regiments_per_development = 0.05
     home_province = 2684
 	sprites = { indiangfx_sprite_pack }
-    trigger = {	
-		any_owned_province = {
-            region = moluccas_region
+    trigger = {
+		moluccas_region = {
+			owned_by = ROOT
 		}
 	}
-	modifier = { 
+	modifier = {
 		shock_damage_received = -0.05
 	}
 }
@@ -28,12 +28,12 @@ MCE_merc_nias_warriors = {
     regiments_per_development = 0.05
     home_province = 2684
 	sprites = { indiangfx_sprite_pack }
-    trigger = {	
-		any_owned_province = {
-            region = malaya_region
+    trigger = {
+		malaya_region = {
+			owned_by = ROOT
 		}
 	}
-	modifier = { 
+	modifier = {
 		land_attrition = -0.1
 	}
 }
@@ -43,10 +43,10 @@ MCE_merc_red_devils = {
 	cavalry_weight = 1
     home_province = 1029
 	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
-    trigger = {	
+    trigger = {
 		capital_scope = { region = japan_region }
 	}
-	modifier = { 
+	modifier = {
 		cavalry_power = 0.1
 	}
 }
@@ -55,10 +55,10 @@ MCE_merc_shogunate_guards = {
     regiments_per_development = 0.05
     home_province = 1020
 	sprites = { dlc067_htk_sprite_pack jap_base_sprite_pack }
-    trigger = {	
-		capital_scope = { province_id = 1020 }
+    trigger = {
+		capital = 1020
 	}
-	modifier = { 
+	modifier = {
 		shock_damage_received = -0.05
 		fire_damage_received = -0.05
 	}
@@ -68,10 +68,10 @@ MCE_merc_ikko_ikki = {
     regiments_per_development = 0.025
     home_province = 1023
 	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
-    trigger = {	
+    trigger = {
 		capital_scope = { region = japan_region }
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
 		fire_damage = 0.1
 	}
@@ -81,11 +81,11 @@ MCE_merc_royal_life_guard = {
     regiments_per_development = 0.05
     home_province = 12
 	sprites = { dan_base_sprite_pack }
-    trigger = {	
+    trigger = {
 		tag = DAN
 		is_year = 1550
 	}
-	modifier = { 
+	modifier = {
 		infantry_power = 0.1
 		fire_damage_received = -0.05
 	}
@@ -97,10 +97,10 @@ MCE_merc_navarrese_company = {
 	cavalry_weight = 0.2
     home_province = 210
 	sprites = { dlc098_nav_sprite_pack westerngfx_sprite_pack }
-    trigger = {	
+    trigger = {
 		capital_scope = { region = iberia_region }
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.1
 	}
 }
@@ -110,10 +110,10 @@ MCE_merc_sforza_condotierri = {
 	cavalry_weight = 0.2
     home_province = 104
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
-    trigger = {	
+    trigger = {
 		capital_scope = { region = italy_region }
 	}
-	modifier = { 
+	modifier = {
 		infantry_power = 0.05
 		land_morale = 0.05
 	}
@@ -124,10 +124,10 @@ MCE_merc_catalan_guard = {
 	cavalry_weight = 0.4
     home_province = 197
 	sprites = { dlc020_ara_sprite_pack westerngfx_sprite_pack }
-    trigger = {	
+    trigger = {
 		capital_scope = { region = iberia_region }
 	}
-	modifier = { 
+	modifier = {
 		shock_damage_received = -0.05
 		fire_damage_received = -0.05
 	}
@@ -138,10 +138,10 @@ MCE_merc_klephts = {
 	cavalry_weight = 0.2
     home_province = 1773
 	sprites = { easterngfx_sprite_pack }
-    trigger = {	
+    trigger = {
 		capital_scope = { region = balkan_region }
 	}
-	modifier = { 
+	modifier = {
 		movement_speed = 0.1
 		fire_damage = 0.05
 	}
@@ -151,10 +151,10 @@ MCE_merc_varangian_guard = {
 	regiments_per_development = 0.05
     home_province = 151
 	sprites = { easterngfx_sprite_pack }
-    trigger = {	
+    trigger = {
 		tag = BYZ
 	}
-	modifier = { 
+	modifier = {
 		infantry_power = 0.1
 		shock_damage = 0.1
 	}
@@ -169,7 +169,7 @@ MCE_merc_bulgarian_band = {
 	trigger = {
 		capital_scope = { region = balkan_region }
 	}
-	modifier = { 
+	modifier = {
 		cavalry_power = 0.15
 	}
 }
@@ -180,11 +180,11 @@ MCE_merc_hashashin = {
 	cost_modifier = 0.5
     home_province = 424
 	sprites = { dlc078_naj_sprite_pack per_base_sprite_pack }
-	trigger = {	
+	trigger = {
 		religion = shiite
 		at_war_with_religious_enemy = yes
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
 		movement_speed = 0.1
 	}
@@ -202,7 +202,7 @@ MCE_merc_chu_ko_nu_band = {
 		NOT = {	current_age = age_of_absolutism }
 		NOT = {	current_age = age_of_revolutions }
 	}
-	modifier = { 
+	modifier = {
 		fire_damage = 0.1
 	}
 }
@@ -214,14 +214,14 @@ MCE_merc_portuguese_tercos = {
 	cost_modifier = 1.5
     home_province = 1014
 	sprites = { dlc042_por_sprite_pack por_base_sprite_pack }
-	trigger = {	
+	trigger = {
 		capital_scope = { region = japan_region }
 		religion_group = christian
 		exists = POR
 		NOT = { war_with = POR }
 		any_known_country = { tag = POR }
 	}
-	modifier = { 
+	modifier = {
 		siege_ability = 0.1
 		infantry_fire = 0.05
 	}
@@ -233,11 +233,11 @@ MCE_merc_baburs_host = {
 	cavalry_weight = 0.3
     home_province = 2214
 	sprites = { dlc092_mug_sprite_pack per_base_sprite_pack }
-	trigger = {	
+	trigger = {
 		tag = KHO
 		is_at_war = yes
 	}
-	modifier = { 
+	modifier = {
 		movement_speed = -0.1
 		shock_damage_received = 0.1
 	}
@@ -249,10 +249,10 @@ MCE_merc_winged_hussars = {
 	cost_modifier = 1.5
     home_province = 257
 	sprites = { dlc003_pol_sprite_pack pol_base_sprite_pack }
-	trigger = {	
+	trigger = {
 		current_age = age_of_absolutism
 	}
-	modifier = { 
+	modifier = {
 		shock_damage = 0.1
 		cavalry_power = 0.1
 	}
@@ -262,13 +262,13 @@ MCE_merc_japanese_guard = {
 	regiments_per_development = 0.03
     home_province = 600
 	sprites = { Nodachi_Samurai_sprite_pack dlc068_jap_sprite_pack jap_base_sprite_pack }
-	trigger = {	
+	trigger = {
+		is_year = 1590
 		japan_region = {
 			has_discovered = ROOT
 		}
-		is_year = 1590
 	}
-	modifier = { 
+	modifier = {
 		recover_army_morale_speed = 0.05
 		land_morale = 0.05
 	}
@@ -279,10 +279,10 @@ MCE_merc_galician_company = {
     home_province = 206
 	cavalry_weight = 0.2
 	sprites = { dlc098_gal_sprite_pack cas_base_sprite_pack }
-	trigger = {	
+	trigger = {
 		capital_scope = { region = iberia_region }
 	}
-	modifier = { 
+	modifier = {
 		infantry_power = 0.1
 		siege_ability = 0.05
 	}
@@ -293,11 +293,11 @@ MCE_merc_arabian_horsemen = {
 	cavalry_weight = 1
     home_province = 392
 	sprites = { dlc078_hed_sprite_pack muslimgfx_sprite_pack }
-	trigger = {	
+	trigger = {
 		capital_scope = { region = arabia_region }
 		religion_group = muslim
 	}
-	modifier = { 
+	modifier = {
 		land_attrition = -0.1
 		movement_speed = 0.1
 	}
@@ -308,10 +308,10 @@ MCE_merc_tatar_mercenaries = {
 	cavalry_weight = 1
     home_province = 303
 	sprites = { dlc048_nog_sprite_pack asiangfx_sprite_pack }
-	trigger = {	
+	trigger = {
 		capital_scope = { region = russia_region }
 	}
-	modifier = { 
+	modifier = {
 		land_attrition = -0.1
 		loot_amount = 0.1
 	}
@@ -321,7 +321,7 @@ MCE_merc_maori_mercenaries = {
 	regiments_per_development = 0.05
     home_province = 2738
 	sprites = { africangfx_sprite_pack }
-	modifier = { 
+	modifier = {
 		infantry_shock = 0.2
 	}
 }
@@ -332,16 +332,18 @@ MCE_merc_walloon_company = {
     home_province = 1866
 	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		OR = {
-			capital_scope = { region = low_countries_region }
-			capital_scope = { region = north_german_region }
-			capital_scope = { region = south_german_region }
-			capital_scope = { region = france_region }
+		capital_scope = {
+			OR = {
+				region = low_countries_region
+				region = north_german_region
+				region = south_german_region
+				region = france_region
+			}
 		}
 	}
-	modifier = { 
+	modifier = {
 		movement_speed = 0.05
-		loot_amount = 0.1 
+		loot_amount = 0.1
 	}
 }
 
@@ -353,7 +355,7 @@ MCE_merc_transylvanian_cavalry = {
 	trigger = {
 		tag = BOH
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
 		cavalry_power = 0.1
 	}
@@ -366,7 +368,7 @@ MCE_merc_german_mercenaries = {
 	trigger = {
 		tag = BOH
 	}
-	modifier = { 
+	modifier = {
 		discipline = 0.05
 	}
 }
@@ -380,9 +382,9 @@ MCE_merc_borgia = {
 		capital_scope = { superregion = europe_superregion }
 		NOT = { current_age = age_of_discovery }
 	}
-	modifier = { 
+	modifier = {
 		infantry_fire = 1
-		siege_ability = 0.10 
+		siege_ability = 0.10
 	}
 }
 
@@ -401,29 +403,28 @@ MCE_merc_new_company_of_the_rose = { #Shock Troops, historically 1000 knights an
 			continent = europe
 		}
 		OR = {
-			AND = {
-				NOT = {
-					capital_scope = {
-						region = italy_region
-					}
-				}
-				any_country = {
-					war_with = root
-					capital_scope = {
-						region = italy_region
-					}
-				}
-			}
 			capital_scope = {
 				region = italy_region
 			}
+			AND = {
+				capital_scope = {
+					NOT = { region = italy_region }
+				}
+				any_country = {
+					war_with = ROOT
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
 		}
 	}
-	modifier = { 
+	modifier = {
 		cavalry_shock = 1
 		infantry_shock = 1
 	}
 }
+
 MCE_honoratas_band = { #Don't kill me, this is a female band so they get female stuff also
 	regiments_per_development = 0.1
 	home_province = 1862
@@ -432,7 +433,7 @@ MCE_honoratas_band = { #Don't kill me, this is a female band so they get female 
 		capital_scope = { continent = europe }
 		NOT = { current_age = age_of_discovery }
 	}
-	modifier = { 
+	modifier = {
 		discipline = 0.02
 		land_morale = 0.05
 		may_recruit_female_generals = yes
@@ -448,12 +449,12 @@ MCE_merc_knights_cyprus = {
 	cost_modifier = 0.5
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		religion = catholic
 		papal_influence = 15
 		capital_scope = { continent = europe }
-		religion = catholic
-		at_war_with_religious_enemy = yes 
+		at_war_with_religious_enemy = yes
 	}
-	modifier = { 
+	modifier = {
 		cavalry_power = 0.15
 		land_morale = 0.05
 	}
@@ -466,12 +467,12 @@ MCE_merc_knights_hospitaller = {
 	cost_modifier = 0.5
 	sprites = { dlc040_kni_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { continent = europe }
 		religion = catholic
-		at_war_with_religious_enemy = yes
 		papal_influence = 15
+		capital_scope = { continent = europe }
+		at_war_with_religious_enemy = yes
 	}
-	modifier = { 
+	modifier = {
 		infantry_power = 0.10
 		land_morale = 0.05
 	}
@@ -484,21 +485,19 @@ MCE_merc_teutonic_order = {
 	cost_modifier = 0.5
 	sprites = { dlc040_teu_sprite_pack westerngfx_sprite_pack }
 	trigger = {
+		religion = catholic
+		papal_influence = 15
 		capital_scope = { continent = europe }
 		OR = {
-			AND = {
-				religion = catholic
-				at_war_with_religious_enemy = yes
-			}
+			at_war_with_religious_enemy = yes
 			war_with = POL
 			war_with = LIT
 			war_with = PLC
 		}
-		papal_influence = 15
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
-		cavalry_shock = 1 
+		cavalry_shock = 1
 	}
 }
 
@@ -509,12 +508,12 @@ MCE_merc_livonia_order = {
 	cost_modifier = 0.5
 	sprites = { dlc040_liv_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { continent = europe }
-		papal_influence = 15
 		religion = catholic
-		at_war_with_religious_enemy = yes 
+		papal_influence = 15
+		capital_scope = { continent = europe }
+		at_war_with_religious_enemy = yes
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
 		infantry_fire = 1
 	}
@@ -527,12 +526,12 @@ MCE_merc_knights_of_calatrava = {
 	cost_modifier = 0.5
 	sprites = { dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { region = iberia_region }
 		religion = catholic
-		at_war_with_religious_enemy = yes 
 		papal_influence = 15
+		capital_scope = { region = iberia_region }
+		at_war_with_religious_enemy = yes
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
 		cavalry_fire = 1
 	}
@@ -545,12 +544,12 @@ MCE_merc_knights_of_santiago = {
 	cost_modifier = 0.5
 	sprites = { dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { region = iberia_region }
 		religion = catholic
-		at_war_with_religious_enemy = yes 
 		papal_influence = 15
+		capital_scope = { region = iberia_region }
+		at_war_with_religious_enemy = yes
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.05
 		infantry_shock = 1
 	}
@@ -565,7 +564,7 @@ MCE_merc_brotherhood_of_the_holy_sepulchre = {
 		religion = orthodox
 		patriarch_authority = 0.05
 	}
-	modifier = { 
+	modifier = {
 		discipline = 0.05
 		land_morale = 0.05
 	}
@@ -587,25 +586,23 @@ MCE_merc_Montefeltro_Bastion = {
 			continent = europe
 		}
 		OR = {
-			AND = {
-				NOT = {
-					capital_scope = {
-						region = italy_region
-					}
-				}
-				any_country = {
-					war_with = root
-					capital_scope = {
-						region = italy_region
-					}
-				}
-			}
 			capital_scope = {
 				region = italy_region
 			}
+			AND = {
+				capital_scope = {
+					NOT = { region = italy_region }
+				}
+				any_country = {
+					war_with = ROOT
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
 		}
 	}
-	modifier = { 
+	modifier = {
 		land_morale = 0.10
 		movement_speed = 0.05
 		recover_army_morale_speed = 0.10
@@ -628,28 +625,26 @@ MCE_merc_black_company = {
 			continent = europe
 		}
 		OR = {
-			AND = {
-				NOT = {
-					capital_scope = {
-						region = italy_region
-					}
-				}
-				any_country = {
-					war_with = root
-					capital_scope = {
-						region = italy_region
-					}
-				}
-			}
 			capital_scope = {
 				region = italy_region
 			}
+			AND = {
+				capital_scope = {
+					NOT = { region = italy_region }
+				}
+				any_country = {
+					war_with = ROOT
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
 		}
 	}
-	modifier = { 
+	modifier = {
 		land_morale = -0.10
 		movement_speed = -0.05
-		
+
 	}
 }
 
@@ -658,7 +653,7 @@ MCE_merc_local_lukerzz = {
 	cavalry_weight = 0.2
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-		capital_scope = { province_id = 101 }
+		capital = 101
 		primary_culture = norwegian
 	}
 	modifier = {
@@ -752,7 +747,7 @@ MCE_threehundered_spartans = {
 	regiments_per_development = 0.000000000000001
 	sprites = { easterngfx_sprite_pack }
 	trigger = {
-		capital_scope = { province_id = 145 }
+		capital = 145
 	}
 	modifier = {
 		infantry_power = 0.2
@@ -764,7 +759,7 @@ MCE_sacred_band = {
 	sprites = { easterngfx_sprite_pack }
 	home_province = 146
 	trigger = {
-		culture = greek
+		primary_culture = greek
 	}
 	modifier = {
 		infantry_power = 0.05
@@ -814,7 +809,7 @@ MCE_Jurchen_Band = {
 	cavalry_weight = 1
 	sprites = {dlc048_nog_sprite_pack asiangfx_sprite_pack }
     trigger = {
-		NOT = { government = horde } 
+		NOT = { government = horde }
 		capital_scope = { continent = asia }
 	}
 	modifier = {
