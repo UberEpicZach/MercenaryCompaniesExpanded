@@ -2,10 +2,7 @@ MCE_merc_siddis = {
     regiments_per_development = 0.05
     home_province = 2089
 	sprites = { dlc057_eth_sprite_pack africangfx_sprite_pack }
-    trigger = {	
-		any_owned_province = {
-             has_goods_produced = slaves
-		}
+    trigger = {
 		religion_group = muslim
 	}
 	modifier = { 
