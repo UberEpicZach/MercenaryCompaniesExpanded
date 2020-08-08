@@ -4,7 +4,7 @@ country_event = {
 	id = MCE_Holy_Orders.1
 	title = MCE_Holy_Orders.1.t
 	desc = MCE_Holy_Orders.1.d
-	
+
 	trigger = {
 		any_hired_mercenary_company = {
 			OR = {
@@ -25,14 +25,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = MCE_Holy_Orders.1.a
-		
+
 		random_hired_mercenary_company = {
 			limit = {
 				template = MCE_merc_knights_cyprus
@@ -82,7 +82,7 @@ country_event = {
 	id = MCE_Holy_Orders.2
 	title = MCE_Holy_Orders.2.t
 	desc = MCE_Holy_Orders.2.d
-	
+
 	trigger = {
 		any_hired_mercenary_company = {
 			template = MCE_merc_teutonic_order
@@ -90,24 +90,24 @@ country_event = {
 		}
 		NOT = {
 			any_country = {
+				war_with = ROOT
 				OR = {
 					NOT = { religion = ROOT }
-					war_with = ROOT
+					tag = POL
+					tag = LIT
+					tag = PLC
 				}
-				war_with = POL
-				war_with = LIT
-				war_with = PLC
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = MCE_Holy_Orders.2.a
-		
+
 		random_hired_mercenary_company = {
 			limit = {
 				template = MCE_merc_teutonic_order
