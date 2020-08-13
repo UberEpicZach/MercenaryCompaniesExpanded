@@ -667,7 +667,7 @@ MCE_merc_hakkapeliitta = {
 	cavalry_weight = 1
 	home_province = 27
 	cost_modifier = 1.7
-	sprites = { dlc016_eng_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
+	sprites = { hakkapeliitta_sprite_pack dlc016_eng_sprite_pack dlc028_swe_sprite_pack westerngfx_sprite_pack }
 	trigger = {
 		capital_scope = { region = scandinavia_region }
 		current_age = age_of_absolutism
